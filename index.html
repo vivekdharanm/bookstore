@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Store 📚</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f3f3f3;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        color: #333;
+      }
+      .book-list {
+        margin-top: 20px;
+      }
+      .book {
+        background: white;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+      }
+      input,
+      button {
+        margin: 5px;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📘 Book Store</h1>
+
+    <div>
+      <input id="title" placeholder="Title" />
+      <input id="author" placeholder="Author" />
+      <input id="price" placeholder="Price" type="number" />
+      <input id="genre" placeholder="Genre" />
+      <button onclick="addBook()">Add Book</button>
+    </div>
+
+    <div class="book-list" id="bookList"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
